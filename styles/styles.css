@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header-nav{
+    background: #3E8989;
+}
+.header-nav-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+}
+.header-list{
+    display: flex;
+    gap: 30px;
+    height: 100px;
+    align-items: center;
+    font-family: 'RM';
+}
+.header-list-link{
+    color: #FFF;
+    font-family: 'RM';
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.header-list-link:hover:after{
+    content: '';
+border-radius: 5px;
+height: 3px;
+width: 74px;
+background: #FFF;
+}
+.header-form-input{
+    height: 35px;
+    border-radius: 20px 0px 0px 20px;
+    border: none;
+    padding: 8px 50px 8px 20px;
+    margin-right: -4px;
+}
+.header-form-btn{
+    width: 74px;
+    height: 35px;
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+    background: #295E5E;
+    color: #FFF
+}
+.header-box{
+    background: url(../images/mountain.jpg)no-repeat center /cover;
+    height: 800px;
+}
+.header-box-title{
+    font-family: 'RS';
+    color: #FFF;
+    font-size: 80px;
+    margin-top: 250px;
+}
+.header-box-text{
+    color: #FFF;
+font-family: 'RM';
+font-size: 40px;
+margin-top: 20px;
+}
+.header-box-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.header-box-link{
+    border-radius: 30px;
+    background: #B4436C;
+    padding: 14px 78px;
+    font-size: 18px;
+    color: #FFF;
+    font-family: 'IS';
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.header-box-link:hover{
+    color:  #B4436C;
+    background: #FFF;
+    transition: 500ms;
+}
+.main-top-title{
+    color: #3E8989;
+    font-family: 'IS';
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.main-top-image{
+    margin-top: 50px;
+}
+.main-top-box{
+display: flex;
+}
+.main-top-texts{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: 'RM';
+   justify-content: center;
+}
+.main-top-text{
+    display: flex;
+    margin-bottom: 20px;
+}
+.main-center-title{
+    font-family: 'IS';
+    display: flex;
+    justify-content: center;
+    color: #3E8989;
+    margin-top: 97px;
+}
+.main-center-item{
+    text-align: center;
+    margin: 20px;
+    margin-top: 53px;
+}
+.main-center-list{
+    font-family: 'IS';
+    display: flex;
+}
+.main-center-link{
+    display: block;
+    color: #000; 
+    text-align: center;
+    font-family: 'RS';
+    margin-top: 30px;
+}
+.main-center-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-center-image{
+    background: #EFEFEF; 
+    max-width: 263px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-center-item:hover{
+    .main-center-link{
+        color: #B4436C;
+        transition: 0.5s;
+    }
+}
+.main-bottom-title{
+    font-family: 'IS';
+    color: #3E8989;
+    margin-top: 100px;
+}
+.main-bottom-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-family: 'RR';
+}
+.main-bottom-number{
+    color: #000
+}
+.main-bottom-email{
+    margin-bottom: 104px;
+    color: #000
+}
+.main-bottom-items{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.main-bottom-p{
+    max-width: 555px;
+    width: 100%;
+}
+.main-bottom-text{
+    color: #000;
+font-family: 'RR';
+font-size: 20px;
+}
+.footer{
+    background: #3E8989;
+}
+.footer-box{
+    color: #FFF;
+}
+.footer-box-list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-family: 'RM';
+    padding-top: 40px;
+}
+.footer-box-items{
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 59px;
+    padding-bottom: 15px;
+}
+.footer-box-text{
+    font-family: 'RR';
+}
+.footer-box-date{
+    font-family: 'RR';
+}
+@media (max-width:1000px){
+    .main-center-box{
+    justify-content: center;
+    }
+    .header-nav-box{
+        flex-direction: column;
+        }
+        .header-logo{
+        margin-top: 15px;
+        }
+        .header-form-input{
+        margin-bottom: 15px;
+        }
+        .main-top-box{
+        flex-direction: column;
+        }
+        .main-top-title{
+        margin-bottom: 15px;
+        }
+}
+@media (max-width:500px){
+    .main-bottom-items{
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    }
+    .main-bottom-box{
+    flex-direction: column;
+    }
+}
+@media (max-width:360px){
+    .main-bottom-items{
+    flex-direction: column;
+    }
+    .header-form-btn{
+    width: 15%;
+    }
+}
